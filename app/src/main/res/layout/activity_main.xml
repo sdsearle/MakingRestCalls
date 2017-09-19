@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.makingrestcalls.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MAKEING RESTFUL CALLS USING DIFFERENT METHODS"/>
+
+    <!--using HTTP native-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Native"
+        android:onClick="makingRestfulCalls"
+        android:id="@+id/btnNativeHttp"/>
+
+    <!--using HTTP OkHTTP-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OKHTTP sync"
+        android:onClick="makingRestfulCalls"
+        android:id="@+id/btnOKHttpSync"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OKHTTP Async"
+        android:onClick="makingRestfulCalls"
+        android:id="@+id/btnOKHttpAsync"/>
+
+    <!--using HTTP Retrofit-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retrofit sync"
+        android:onClick="makingRestfulCalls"
+        android:id="@+id/btnRetrofitSync"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retrofit Async"
+        android:onClick="makingRestfulCalls"
+        android:id="@+id/btnRetrofitAsync"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="28sp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResult"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:id="@+id/ivTest"/>
+
+</LinearLayout>
